@@ -77,6 +77,12 @@ Observations:
 * FTP traffic showed that credentials can be transmitted in plaintext
 * Lack of encryption makes the network vulnerable to packet sniffing attacks
 
+  Traffic was captured using Wireshark with a TCP filter applied.
+
+The capture shows communication between the local machine and external servers over TCP and HTTPS (port 443). Packet details reveal connection establishment using SYN and ACK flags, along with encrypted TLS traffic.
+
+This demonstrates how network traffic can be monitored and analyzed, although encrypted protocols prevent direct visibility of sensitive data.
+
 ---
 
 ## 5. Firewall Demonstration
